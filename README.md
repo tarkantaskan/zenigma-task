@@ -179,5 +179,5 @@
     */5 * * * * /root/zenigma_monitor.sh >> /root/cron_monitor.log 2>&1
     
     crontab -l
-#### Addıng " >>/root/cron_monitor.log 2>&1" for seeing if any error occured while job is executing every 5 minutes
+#### Adding " >>/root/cron_monitor.log 2>&1" for seeing if any error occured while job is executing every 5 minutes
 
