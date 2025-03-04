@@ -181,3 +181,6 @@
     crontab -l
 #### Adding " >>/root/cron_monitor.log 2>&1" for seeing if any error occured while job is executing every 5 minutes
 
+![zenigma-script-task](https://github.com/user-attachments/assets/bfa99228-6ac0-4066-bc75-431c708da172)
+
+
