@@ -206,4 +206,22 @@
 
 ![zenigma-script-task](https://github.com/user-attachments/assets/bfa99228-6ac0-4066-bc75-431c708da172)
 
+### CONSTANT USAGE INSIDE ZENIGMA_MONITOR.SH
+
+    LOG_FILE → Monitored log file: /root/zenigma.log
+    SERVICE_NAME → Monitored service: hello_zenigma.service
+    MAX_RECORDS → Threshold value: 20 entries
+    KILLER_LOG → Log file for script operations: /root/killer.log
+    LOCK_FILE → Ensures only one script instance runs: /tmp/zenigma_monitor.lock
+
+### SUMMARY
+
+The script:
+
+    1-Continuously checks whether the service is running.
+    2-Automatically starts the service if it is not running.
+    3-Uses a lock mechanism to prevent multiple instances from running simultaneously.
+    4-Logs all operations to the killer.log file and displays them on the terminal.
+
+This ensures that the service runs stably and prevents unnecessary log accumulation.
 
